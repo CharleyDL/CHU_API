@@ -34,3 +34,16 @@ The current version includes the following features:
 
 Next possible feature(s) :  
 - None for the moment
+
+
+---------------------------------
+---------------------------------
+
+# INSTALLATION
+
+- pip install -r requirements
+- import CHU_api.sql in your phpMyAdmin
+- launch populateTables.py (modules > populateTables.py)
+- launch FLASK - in terminal : '$flask run'
+- enjoy the localhost documentation
+- for more testing : use Postman Desktop
