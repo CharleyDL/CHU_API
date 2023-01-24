@@ -41,7 +41,7 @@ def get_materials():
         return jsonify(result_db)
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/materiel/<int:id>', methods=['GET'])
@@ -53,7 +53,7 @@ def get_one_material(id):
         return jsonify(result_db)
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/materiel', methods=['POST'])
@@ -73,7 +73,7 @@ def add_material():
         return result_db
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/materiel', methods=['PUT'])
@@ -94,7 +94,7 @@ def update_material():
         return result_db
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/materiel', methods=['DELETE'])
@@ -109,7 +109,7 @@ def del_material():
         return result_db
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 ################################################################################
@@ -125,7 +125,7 @@ def get_employees():
         return jsonify(result_db)
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/employee/<int:id>', methods=['GET'])
@@ -137,7 +137,7 @@ def get_one_employee(id):
         return jsonify(result_db)
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/employee', methods=['POST'])
@@ -158,7 +158,7 @@ def add_employee():
         return result_db
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/employee', methods=['PUT'])
@@ -180,7 +180,7 @@ def update_employee():
         return result_db
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
 
 
 @app.route('/api/employee', methods=['DELETE'])
@@ -195,4 +195,4 @@ def del_employee():
         return result_db
 
     except Exception as e:
-        return  { "result" : e }
+        return  { "error" : e }
